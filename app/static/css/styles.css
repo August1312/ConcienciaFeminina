@@ -398,3 +398,184 @@ blockquote {
   padding: 20px;
   margin-left: 5px;
 }
+
+@media (max-width: 840px) {
+
+.icone-social i {
+  font-size: 1rem;
+  padding: 2px;
+}
+.icone-social i:hover {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sobre-section {
+  display: flex;
+  align-items: center;
+}
+
+.sobre-section p {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;
+}
+
+.sobre-section img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.sobre-section-1 {
+  display: flex;
+  align-items: center;
+}
+
+.sobre-section-1 p {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;
+}
+
+.img-sobre-section-1 {
+  padding: 20px;
+  flex-shrink: 0;
+  width: 50%;
+  height: auto;
+}
+
+.manifesto-h3 {
+  padding: 20px;
+}
+.manifesto-section {
+  display: flex;
+  align-items: center;
+}
+
+.manifesto-section p {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;;
+}
+
+.manifesto-section img {
+  padding: 20px;
+  flex-shrink: 0;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.manisfesto-section-1 {
+  display: flex;
+  align-items: center;
+}
+
+.manisfesto-section-1 p {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;
+}
+
+.manisfesto-section-1 img {
+  padding: 20px;
+  flex-shrink: 0;
+  width: 50%;
+  height: auto;
+}
+
+.manifesto-section-2 {
+  display: flex;
+  align-items: center;
+}
+
+.manifesto-section-2 p {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;
+}
+
+.manifesto-section-2 img {
+  padding: 20px;
+  flex-shrink: 0;
+  width: 50%;
+  height: auto;
+}
+
+.manifesto-seciton-3 {
+  display: flex;
+  align-items: center;
+}
+
+.manifesto-seciton-3 p {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;
+}
+
+.manifesto-seciton-3 img {
+  padding: 20px;
+  flex-shrink: 0;
+  width: 50%;
+  height: auto;
+}
+
+.manifesto-section-4 {
+  display: flex;
+  align-items: center;
+}
+
+.manifesto-section-4 p {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;
+}
+
+.manifesto-section-4 img {
+  padding: 20px;
+  flex-shrink: 0;
+  width: 50%;
+  height: auto;
+}
+
+blockquote {
+  flex: 1;
+  color: #000;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 2px;
+}
+.card img {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 9px;
+}
+.card-text {
+  font-size: 8px;
+}
+.btn-primary {
+  font-size: 2px;
+  width: auto;
+  height: 40px;
+}
+}
