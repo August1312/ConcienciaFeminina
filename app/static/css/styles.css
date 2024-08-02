@@ -1,3 +1,10 @@
+/* Reset básico */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +13,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+
 a {
   text-decoration: none;
 }
@@ -21,8 +29,7 @@ header {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, padding 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
 }
 
 header.scrolled {
@@ -170,9 +177,7 @@ form label {
   margin: 10px 0 5px;
 }
 
-form input,
-form textarea,
-form button {
+form input, form textarea, form button {
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -203,7 +208,8 @@ form button:hover {
 .img-sobre-icone {
   max-width: 15%;
   height: auto;
-  margin-left: 42%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .d-flex {
@@ -211,6 +217,7 @@ form button:hover {
   justify-content: center;
   gap: 20px;
 }
+
 .card img {
   width: auto;
   height: 400px;
@@ -228,6 +235,7 @@ form button:hover {
 .carousel-indicators {
   margin-bottom: -35px;
 }
+
 @media (max-width: 1860px) {
   .carousel-control-prev {
     margin-left: 0;
@@ -237,22 +245,25 @@ form button:hover {
     margin-right: 0;
   }
 }
+
 .icone-social i {
   font-size: 2rem;
   padding: 5px;
 }
+
 .icone-social i:hover {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
 }
 
-.sobre-section {
+.sobre-section, .sobre-section-1, .manifesto-section, .manisfesto-section-1, .manifesto-section-2, .manifesto-seciton-3, .manifesto-section-4 {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.sobre-section p {
+.sobre-section p, .sobre-section-1 p, .manifesto-section p, .manisfesto-section-1 p, .manifesto-section-2 p, .manifesto-seciton-3 p, .manifesto-section-4 p, blockquote {
   flex: 1;
   color: #000;
   font-size: 25px;
@@ -260,322 +271,51 @@ form button:hover {
   margin-left: 5px;
 }
 
-.sobre-section img {
+.sobre-section img, .sobre-section-1 img, .manifesto-section img, .manisfesto-section-1 img, .manifesto-section-2 img, .manifesto-seciton-3 img, .manifesto-section-4 img {
+  padding: 20px;
+  flex-shrink: 0;
   width: 30%;
   height: auto;
   border-radius: 50%;
-  padding: 20px;
-}
-
-.sobre-section-1 {
-  display: flex;
-  align-items: center;
-}
-
-.sobre-section-1 p {
-  color: #000;
-  flex: 1;
-  font-size: 25px;
-  padding: 20px;
-  margin-left: 5px;
-}
-
-.img-sobre-section-1 {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 40%;
-  height: auto;
-}
-
-.manifesto-h3 {
-  padding: 20px;
-}
-.manifesto-section {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-section p {
-  color: #000;
-  flex: 1;
-  font-size: 25px;
-  padding: 20px;
-  margin-left: 5px;
-}
-
-.manifesto-section img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 25%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.manisfesto-section-1 {
-  display: flex;
-  align-items: center;
-}
-
-.manisfesto-section-1 p {
-  color: #000;
-  flex: 1;
-  font-size: 25px;
-  padding: 20px;
-  margin-left: 5px;
-}
-
-.manisfesto-section-1 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 27%;
-  height: auto;
-}
-
-.manifesto-section-2 {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-section-2 p {
-  color: #000;
-  flex: 1;
-  font-size: 25px;
-  padding: 20px;
-  margin-left: 5px;
-}
-
-.manifesto-section-2 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 15%;
-  height: auto;
-}
-
-.manifesto-seciton-3 {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-seciton-3 p {
-  color: #000;
-  flex: 1;
-  font-size: 25px;
-  padding: 20px;
-  margin-left: 5px;
-}
-
-.manifesto-seciton-3 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 25%;
-  height: auto;
-}
-
-.manifesto-section-4 {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-section-4 p {
-  color: #000;
-  flex: 1;
-  font-size: 25px;
-  padding: 20px;
-  margin-left: 5px;
-}
-
-.manifesto-section-4 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 25%;
-  height: auto;
-}
-
-blockquote {
-  color: #000;
-  flex: 1;
-  font-size: 25px;
-  padding: 20px;
-  margin-left: 5px;
 }
 
 @media (max-width: 840px) {
+  .icone-social i {
+    font-size: 1rem;
+    padding: 2px;
+  }
 
-.icone-social i {
-  font-size: 1rem;
-  padding: 2px;
-}
-.icone-social i:hover {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-}
+  .icone-social i:hover {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+  }
 
-.sobre-section {
-  display: flex;
-  align-items: center;
-}
+  .sobre-section p, .sobre-section-1 p, .manifesto-section p, .manisfesto-section-1 p, .manifesto-section-2 p, .manifesto-seciton-3 p, .manifesto-section-4 p, blockquote {
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 2px;
+  }
 
-.sobre-section p {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;
-}
+  .sobre-section img, .sobre-section-1 img, .manifesto-section img, .manisfesto-section-1 img, .manifesto-section-2 img, .manifesto-seciton-3 img, .manifesto-section-4 img {
+    width: 50%;
+  }
 
-.sobre-section img {
-  width: 50%;
-  height: auto;
-  border-radius: 50%;
-  padding: 20px;
-}
+  .card img {
+    height: 100px;
+  }
 
-.sobre-section-1 {
-  display: flex;
-  align-items: center;
-}
+  .card-title {
+    font-size: 9px;
+  }
 
-.sobre-section-1 p {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;
-}
+  .card-text {
+    font-size: 8px;
+  }
 
-.img-sobre-section-1 {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 50%;
-  height: auto;
-}
-
-.manifesto-h3 {
-  padding: 20px;
-}
-.manifesto-section {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-section p {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;;
-}
-
-.manifesto-section img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 50%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.manisfesto-section-1 {
-  display: flex;
-  align-items: center;
-}
-
-.manisfesto-section-1 p {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;
-}
-
-.manisfesto-section-1 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 50%;
-  height: auto;
-}
-
-.manifesto-section-2 {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-section-2 p {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;
-}
-
-.manifesto-section-2 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 50%;
-  height: auto;
-}
-
-.manifesto-seciton-3 {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-seciton-3 p {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;
-}
-
-.manifesto-seciton-3 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 50%;
-  height: auto;
-}
-
-.manifesto-section-4 {
-  display: flex;
-  align-items: center;
-}
-
-.manifesto-section-4 p {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;
-}
-
-.manifesto-section-4 img {
-  padding: 20px;
-  flex-shrink: 0;
-  width: 50%;
-  height: auto;
-}
-
-blockquote {
-  flex: 1;
-  color: #000;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 2px;
-}
-.card img {
-  width: auto;
-  height: 100px;
-  object-fit: cover;
-}
-.card-title {
-  font-size: 9px;
-}
-.card-text {
-  font-size: 8px;
-}
-.btn-primary {
-  font-size: 2px;
-  width: auto;
-  height: 40px;
-}
+  .btn-primary {
+    font-size: 2px;
+    width: auto;
+    height: 40px;
+  }
 }
